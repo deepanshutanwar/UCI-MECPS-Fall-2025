@@ -1,0 +1,41 @@
+In this lab, we will build the foundation for our eventual "swarm sensor array" project later in the quarter. You will submit a document containing simple schematics and code as well as perform a live demonstration create a video (linked via GoogleDrive/OneDrive w/ permissions for "anyone with link" to view).
+
+The video should be a single video that goes through each part. The overall video should not be longer than 5 minutes total. If you need to recompile your code for each part (not ideal, but fine for this lab), you may want to edit/pause your video to remove the compiling part.
+
+Part 1 (60 points)
+
+Connect the RGB Light Sensor on ESP32
+Read sensor values once every second
+Display the values on the IDE console window
+Turn the onboard LED ON if the average value in a window of X (e.g. 2) seconds is higher than a threshold of Y (e.g. 150 - or pick another value you can justify/document)
+Part 2 (20 points)
+
+Connect 3 external LEDs to ESP32
+Display the intensity of light from the RGB Sensor on 3 external LEDs using various patterns (e.g. low -> green LED on, medium -> yellow LED on, high -> red LED on)
+Document your value thresholds and justify
+Part 3 (20 points)
+
+Flash (instead of just ON) onboard LED if the average value in a sliding window of X (e.g. 2) seconds is higher than a threshold of Y (e.g. 150 or the value you picked earlier)
+The higher the readings, the faster it flashes
+Optional Advanced Ideas (0 points)
+
+Display values from Part 1 also on an LED panel
+Add/use a button to switch between parts 1, 2, and 3 so you do not have to reprogram/recompile for each part
+Display on the IDE/LED panel which part of the program is running
+ 
+
+Document/Submission Guidelines:
+Submit your final source code file(s)
+Submit 1 file (pdf format) with the following sections (along with 1 video link for demonstration):
+Part 1:
+Brief description of the schematic & code (1-3 sentence summary of this part).
+A simple wiring schematic showing the RGB sensor & ESP along with labeled connections. A legible hand-drawn schematic is sufficient for full credit. A CAD designed schematic is preferred for those wanting a more professional presentation.
+Annotated screenshot of code for this part describing relevant parts
+Part 2:
+Brief description of the schematic & code (1-3 sentence summary of this part).
+A simple wiring schematic showing the LED sensors & ESP along with labeled connections. A legible hand-drawn schematic is sufficient for full credit. A CAD designed schematic is preferred for those wanting a more professional presentation.
+Annotated screenshot of code for this part describing relevant parts
+Part 3:
+Brief description of the schematic & code (1-3 sentence summary of this part).
+A simple wiring schematic showing the final design with RGB sensor, LED sensors, & ESP along with labeled connections. A legible hand-drawn schematic is sufficient for full credit. A CAD designed schematic is preferred for those wanting a more professional presentation.
+Annotated screenshot of code for this part describing relevant parts
