@@ -1,0 +1,23 @@
+Instructions:
+
+This assignment requires programming in RasberryPi. Please submit this assignment individually through Canvas. Please submit a zipped folder including a report of your work and the schematic of your circuit. Please also include your python codes inside a file named main.py, and the recorded data inside data.txt
+
+Part1:  Connect MPU6050 sensor using the I2C connection.
+
+                                                         mpu6050.png
+
+Part2: To enable I2C on your Rasberry Pi, click on the rasberry icon On the top right of the screen. Click on the Preferences-> Rasberry Pi Configurations-> Interfaces.
+
+In order to use i2c inside your python code you need to install a few tools and python packages:
+
+>> sudo apt-get install i2c-tools 
+
+>>i2cdetect -y 1   //This should give you the device address for the connected i2c ports
+
+>>sudo apt-get install libi2c-dev
+
+>> sudo apt install python3-smbus2
+
+Part2:
+
+Write a python code to read the accelerometer on x and y and z axis as well as the gyroscope in the three axes. You can use the following online tutorial to read from the sensor (https://docs.sunfounder.com/projects/raphael-kit/en/latest/python/2.2.9_mpu6050_module_python.html). Sample your data every 0.1 seconds for at least 1 minute and save it as an  array inside a file called data.txt.
