@@ -1,0 +1,8 @@
+main -> write_pgm_image
+main -> read_pgm_image
+main -> canny -> gaussian_smooth -> make_gaussian_kernel
+main -> canny -> derivative_x_y
+main -> canny -> radian_direction -> angle_radian
+main -> canny -> magnitude_x_y
+main -> canny -> non_max_supp
+main -> canny -> apply_hysteresis -> follow_edges
