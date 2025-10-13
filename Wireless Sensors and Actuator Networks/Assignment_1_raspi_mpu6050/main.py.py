@@ -35,7 +35,7 @@ time_data = []
 accel_x_data, accel_y_data, accel_z_data = [], [], []
 gyro_x_data, gyro_y_data, gyro_z_data = [], [], []
 
-print(f"⏳ Collecting {samples} samples over {duration} seconds...")
+print(f"Collecting {samples} samples over {duration} seconds...")
 
 start_time = time.time()
 
@@ -67,7 +67,7 @@ for i in range(samples):
 
     time.sleep(interval)
 
-print("\n✅ Data collection complete!")
+print("\nData collection complete!")
 
 # Save to file
 file_path = "data.txt"
@@ -77,4 +77,4 @@ with open(file_path, "w") as f:
         f.write(f"{time_data[i]:.2f},{accel_x_data[i]:.4f},{accel_y_data[i]:.4f},{accel_z_data[i]:.4f},"
                 f"{gyro_x_data[i]:.2f},{gyro_y_data[i]:.2f},{gyro_z_data[i]:.2f}\n")
 
-print(f"📁 Data saved to {os.path.abspath(file_path)}")
+print(f"Data saved to {os.path.abspath(file_path)}")
