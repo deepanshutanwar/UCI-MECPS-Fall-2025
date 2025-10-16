@@ -1,0 +1,25 @@
+The assignment was successfully completed by removing all compilation warnings and errors, adding hardcoded values, and converting dynamic memory allocation to static memory. The modified program now compiles cleanly and successfully prints the processed image output.
+
+Challenges and Solutions-:
+
+1. C to C++ Conversion
+One of the primary challenges was converting the original C code to C++. This required understanding key differences between the two languages, especially in areas such as type casting, memory management, and strict syntax enforcement.
+
+2. Removing local variable and adding hardcoded values
+During debugging, certain parameters such as
+
+ROWS = 240  
+COLS = 320  
+SIGMA = 0.6  
+TLOW = 0.3  
+THIGH = 0.8
+
+were hardcoded. Initially, these values were being passed as variables across multiple function. Each function was updated individually to use fixed values, and the code was recompiled after every change to ensure proper functionality and accurate results.
+
+3. Converting Dynamic to Static Memory Allocation
+The most significant challenge involved converting dynamic memory (using malloc() and calloc()) to static memory. During this process, repeated errors such as
+
+munmap_chunk(): invalid pointer
+Abort (core dumped)
+
+were encountered. These occurred primarily due to free() being called on memory that was no longer dynamically allocated. The issue was resolved by removing all free() statements corresponding to memory regions converted to static allocation and ensuring consistent memory handling across all functions.
