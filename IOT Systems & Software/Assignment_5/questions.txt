@@ -1,1 +1,15 @@
+For this activity, submit your updated code and a document with some screenshots and explanation of what you enhanced as discussed in class (each screenshot should have a caption explaining what you are representing with the picture).
 
+Your code must start & utilize the starter code. This code can and should be modified. You are allowed to use other freely available/open source 3rd party libraries if you prefer. You should not use any private/password protected github repository code from Internet searches (this should be your own work or your own modifications with the help of free versions of Generative AI).
+
+You are allowed to work individually or in groups (max 3 students). Be sure to identify/select all team members on the GradeScope submission.
+
+Starter code can be found here (install "pygame" for Python version 3.13.9 and earlier; "pygame-ce" for Python 3.14 and earlier):
+
+antSim.pyDownload antSim.py
+Starter code alternative with Tkinter (no additional graphics library required; Python version 3.14 and earlier):
+
+antSim_tkinter.pyDownload antSim_tkinter.py
+Starter code with Matplotlib (install "matplotlib" for Python 3.14 and earlier):
+
+antSim_matplotlib.py
